@@ -7,6 +7,62 @@
     <title>Jose Carmona: Contacto</title>
   </head>
   <body>
-    <header><h1>Formulario de Contacto:</h1></header>
+    <header id="cabecera-principal">
+      <a href="/"><h1>Jose Carmona</h1></a>
+      <nav id="navegacion-principal">
+        <ul>
+          <li><a href="/">Sobre Mi</a></li>
+          <li><a href="proyectos.html">Proyectos</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main id="contenido-principal">
+      <h2>¿Cómo Contactar Conmigo?</h2>
+      <fieldset>
+        <legend>Mis datos de Contacto</legend>
+        <p>
+          Envíame un email a
+          <a href="mailto:carmonajcz@gmail.com">carmonajcz@gmail.com</a>
+        </p>
+        <p>Llámame al <a href="tel:+34643531522">643 53 15 22</a></p>
+        <p>También puedes rellenar el siguiente Formulario:
+          <form action="#" method="post">
+            <fieldset>
+            <legend>Contactar</legend>
+
+            <ul>
+              <li>
+                <label for="username">Nombre:</label>
+                <input type="text" id="username" name="nombre" required autofocus />
+              </li>
+              <li>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="correo" required />
+              </li>
+              <li>
+                <label for="telefono">Teléfono:</label>
+                <input
+                  type="tel"
+                  id="telefono"
+                  name="telefono"
+                />
+              </li>
+              <li>
+                <label for="mensaje">Mensaje:</label>
+                <textarea id="mensaje" cols="50" rows="10" name="mensaje"></textarea>
+              </li>
+            </ul>
+            </fieldset>
+            <button type="submit">Enviar</button>
+          </form>
+        </p>
+      
+      </fieldset>
+          
+    </main>
+    <footer id="pie-principal">
+      <a href="/"><p>©️Jose Carmona - 2023</p></a>
+    </footer>
   </body>
 </html>
